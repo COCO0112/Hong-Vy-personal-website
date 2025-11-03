@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hong Vy's personal website</title>
+    </head>
+    <body>
+        <div style="font-family:arial; color: chocolate; text-align: center;">
+            <h1> WELCOME TO MY PERSONAL WEBSITE! </h1>
+        <!--Photo-->    
+        </div>
+            <div style="font-family:arial; color: brown; text-align: center">
+            <img src="hvy.jpg" alt="personal photo" width="10%" height="12%" style="clip-path:circle(60%); object-fit: cover; height: 180px; width: 180px; border-radius: 50%"/> 
+            </div>
+        </div>
+        <!--Intro-->
+        <div>
+            <h2 style="font-weight:bold; font-family:arial; color:chocolate; text-align: center;"> PHẠM LÂM HỒNG VY </h2>
+            <h3 style="font-family:arial; color:brown; text-align: center; font-weight: bold;"> Class of 2029, Fulbright University Vietnam </h3>
+            <div style="text-align:left; margin: auto; width:60%">
+            <p> I am a freshman passionate about Marketing and Creative Communication.</p> 
+            <p>My goal is to use the power of research and creative storytelling to convey 
+            social messages and drive positive change.</p>
+            <p> I am also interested in AI and social entrepreneurship and how these two fields interact with each other. </p>
+            </div>
+        </div>
+        <!--Projects-->
+        <div>
+            <h2 style="font-weight:bold; font-family:arial; color:chocolate; text-align: center;"> PAST EXPERIENCES AND PROJECTS </h2>
+            <div style="text-align:left; margin: auto; width:60%">
+                <!--AYL'24-->
+                <div style="text-align:center">
+                <img src="AYL.png" alt="AYL'24" width="40%" height="40%"/>
+                </div>
+                <h3 style="font-family:arial; color:brown"> ASIA YOUTH LEADERS 2024 - Delegate</h3>
+                <h4 style="font-family:arial; color:brown">Tokyo, Japan - August, 2024</h4>
+                
+                <ul> 
+                    <li>Led content research for a presentation on "Benevolent Sexism" with a 7-member
+                    international team from 6 Asian countries.</li>
+                    <li>Engaged in leadership training and cultural experiences.</li>
+                    <li>Gained hands-on experience in cross-cultural collaboration.</li>
+                </ul>
+                <!--AVC'24-->
+                <div style="text-align:center">
+                <img src="AVC.jpg" alt="AVC'24" width="30%" height="30%"/>
+                </div>
+                <h3 style="font-family:arial; color:brown;">ASPIRING VIETNAM CONTEST 2024 - Semi-finalist</h3>
+                <h4 style="font-family:arial; color:brown">September, 2024</h4>
+                <ul> 
+                    <li>Conducted qualitative research with 10 young consumers, uncovering 2 key insights into youth attitudes toward culture and their challenges.</li>
+                    <li>Proposed the “Chuyện của chợ” sneaker concept for Biti’s Hunter, representing</li>
+                    Vietnamese traditional market's cultural values through metaphorical symbols —
+                    such as the eye or the heart — embedded in minimalist, authentic design.
+                    Ranked Top 8 in Creative Division for reframing everyday cultural elements with a
+                    dynamic, insight-driven perspective.</li>
+                </ul>
+                <!--MIE-->
+                <div style="text-align:center">
+                    <img src="MIE.jpg" alt="MIE" width="30%" height="30%"/>
+                </div>
+                <h3 style="font-family:arial; color:brown;">NGUYEN HUU CAU MATHS IN ENGLISH CLUB - President</h3>
+                <h4 style="font-family:arial; color:brown">July, 2023 - July, 2024</h4>
+                <ul>
+                    <li>Led a 25-member club, carried out operational reforms.</li>
+                    <li>Transitioned from closed lessons to open workshops, introducing club rules and
+                    working procedures.</li>
+                    <li>Organized workshops with up to 60 participants; built media presence to 1,000+
+                    followers and likes.</li>
+                </ul>
+            </div>
+        </div>
+        <!--Contact info-->
+        <div>
+            <h2 style="font-weight:bold; font-family:arial; color:chocolate; text-align: center;"> CONTACT ME </h2>
+            <div style="text-align:left; margin: auto; width:60%; color:brown">
+                <p>My contact:<a href="mailto:vy.pham.250143@student.fulbright.edu.vn"> vy.pham.250143@student.fulbright.edu.vn </a></p>
+                <p>Leave me a message!</p>
+                <textarea placeholder="Type your message" id="message" style="width:40%; height:50px"></textarea>
+                <br>
+                <button type="submit" onclick="submission()">Send</button>
+                </br>
+                <h3 style="font-weight:bold; font-family:arial; color:chocolate; text-align: center;"> YOUR MESSAGE: </h3>
+                <p id="display"></p>
+            </div>
+        <script>
+            function submission()
+            {
+                let sub=document.getElementById("message").value;
+                document.getElementById("display").innerHTML+=sub +"<br>";
+                document.getElementById("message").value="";
+            }
+        </script>
+        </div>
+    </body>    
